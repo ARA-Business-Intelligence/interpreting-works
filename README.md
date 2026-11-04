@@ -3,7 +3,7 @@
 Production website for **interpretingWorks** by Language Link Corporation.  
 Built with Astro 7 · Tailwind CSS 4 · React 19 · TypeScript.
 
-Live domain → `https://interpreting.works` ---
+Live domain → `https://interpreting.works` 
 
 ---
 
