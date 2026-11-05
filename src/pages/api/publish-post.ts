@@ -154,7 +154,7 @@ export const POST: APIRoute = async ({ request }) => {
   }
 };
 
-// GET — quick health check
+// GET: quick health check
 export const GET: APIRoute = () =>
   json({ status: 'ok', endpoint: 'POST /api/publish-post' }, 200);
 

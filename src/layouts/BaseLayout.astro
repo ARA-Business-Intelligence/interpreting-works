@@ -9,16 +9,16 @@ interface Props {
   type?: 'website' | 'article';
   noindex?: boolean;
   schema?: Record<string, unknown>[];
-  /** ISO 8601 — solo para páginas de tipo article */
+  /** ISO 8601: solo para páginas de tipo article */
   publishedTime?: string;
   modifiedTime?: string;
-  /** Geo — para páginas ciudad/estado */
+  /** Geo: para páginas ciudad/estado */
   geoRegion?: string;
   geoPlacename?: string;
   geoPosition?: string;
-  /** Breadcrumb override — si no se pasa se autogenera desde la URL */
+  /** Breadcrumb override: si no se pasa se autogenera desde la URL */
   breadcrumbs?: { name: string; href?: string }[];
-  /** Visible attribution — shown in the breadcrumb bar */
+  /** Visible attribution: shown in the breadcrumb bar */
   updatedDate?: string;   // YYYY-MM-DD
   pageAuthor?: string;
 }

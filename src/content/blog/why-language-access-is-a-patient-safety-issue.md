@@ -19,7 +19,7 @@ Studies show LEP patients experience:
 
 Using a bilingual family member or untrained staff member as an interpreter is no longer acceptable practice. It creates liability, violates patient privacy, and introduces clinical risk.
 
-The standard today: a **qualified medical interpreter** for every encounter where language access is needed — on-site, via VRI, or OPI.
+The standard today: a **qualified medical interpreter** for every encounter where language access is needed: on-site, via VRI, or OPI.
 
 ## What Hospitals Are Doing Differently
 
@@ -33,7 +33,7 @@ That means:
 
 ## How interpretingWorks Supports Safe Care
 
-The interpretingWorks platform integrates into your existing scheduling workflow. Interpreters are credential-verified, background-checked, and available in 200+ languages — on-site or remote.
+The interpretingWorks platform integrates into your existing scheduling workflow. Interpreters are credential-verified, background-checked, and available in 200+ languages, on-site or remote.
 
 Every session generates an automatic audit record. No paper logs. No gaps.
 
