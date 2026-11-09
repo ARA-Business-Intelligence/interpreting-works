@@ -1,14 +1,14 @@
 ---
 title: "OPI vs VRI: Which Remote Interpreting Mode Is Right for You?"
 pubDate: 2025-10-15
-description: "Over-the-Phone and Video Remote Interpreting both solve the same problem — but they work differently. Here's how to choose."
+description: "Over-the-Phone and Video Remote Interpreting both solve the same problem, but they work differently. Here's how to choose."
 author: "interpretingWorks"
 image: "/img/home-laptop.png"
 tags: ["OPI", "VRI", "Healthcare", "Language Access"]
 draft: false
 ---
 
-When your organization needs an interpreter but an on-site professional isn't available, two remote options step in: **Over-the-Phone Interpreting (OPI)** and **Video Remote Interpreting (VRI)**. Both are fast, flexible, and HIPAA compliant on the interpretingWorks platform — but they serve different situations.
+When your organization needs an interpreter but an on-site professional isn't available, two remote options step in: **Over-the-Phone Interpreting (OPI)** and **Video Remote Interpreting (VRI)**. Both are fast, flexible, and HIPAA compliant on the interpretingWorks platform, but they serve different situations.
 
 ## What Is OPI?
 
@@ -22,7 +22,7 @@ Over-the-Phone Interpreting connects a patient, provider, and interpreter via a 
 
 ## What Is VRI?
 
-Video Remote Interpreting adds a live video feed to the call. The interpreter appears on a screen, which is especially valuable when visual communication matters — facial expressions, body language, and crucially, **American Sign Language (ASL)**.
+Video Remote Interpreting adds a live video feed to the call. The interpreter appears on a screen, which is especially valuable when visual communication matters: facial expressions, body language, and crucially, **American Sign Language (ASL)**.
 
 **Best for:**
 - Deaf and hard-of-hearing patients (ASL)
@@ -42,7 +42,7 @@ Real-time status updates keep your team informed, and electronic check-in/out vi
 
 ## The Bottom Line
 
-If you need speed and simplicity, OPI is your go-to. If the interaction requires visual communication — or involves ASL — VRI is the right choice. With interpretingWorks, switching between modalities takes seconds.
+If you need speed and simplicity, OPI is your go-to. If the interaction requires visual communication or involves ASL, VRI is the right choice. With interpretingWorks, switching between modalities takes seconds.
 
 **Questions about setting up OPI or VRI for your organization?** [Contact our team](/contact/) and we'll walk you through it.
 
@@ -50,6 +50,6 @@ If you need speed and simplicity, OPI is your go-to. If the interaction requires
 
 **Sources & Further Reading**
 
-- [NCIHC — National Standards for Healthcare Interpreting](https://www.ncihc.org/standards-and-guidelines)
-- [CCHI — Certification Commission for Healthcare Interpreters](https://www.cchicertification.org/)
-- [ATA — American Translators Association](https://www.atanet.org/)
+- [NCIHC: National Standards for Healthcare Interpreting](https://www.ncihc.org/standards-and-guidelines)
+- [CCHI: Certification Commission for Healthcare Interpreters](https://www.cchicertification.org/)
+- [ATA: American Translators Association](https://www.atanet.org/)

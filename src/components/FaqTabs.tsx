@@ -3,7 +3,7 @@ import { useState } from 'react';
 const REQUESTERS = [
   {
     q: 'What is InterpretingWorks?',
-    a: 'InterpretingWorks is a secure scheduling platform that helps you request, manage, and track interpreter services quickly and efficiently. It automates scheduling, confirmations, reporting, and billing — all in one place.',
+    a: 'InterpretingWorks is a secure scheduling platform that helps you request, manage, and track interpreter services quickly and efficiently. It automates scheduling, confirmations, reporting, and billing, all in one place.',
   },
   {
     q: 'How do I request an interpreter?',
