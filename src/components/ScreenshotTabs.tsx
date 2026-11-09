@@ -20,7 +20,7 @@ export default function ScreenshotTabs() {
               onClick={() => setActive(tab.id)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
                 active === tab.id
-                  ? 'bg-white text-[#0D1B2A] shadow-sm'
+                  ? 'bg-white text-[#2F3138] shadow-sm'
                   : 'text-gray-400 hover:text-gray-600'
               }`}
               type="button"

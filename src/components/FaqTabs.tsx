@@ -87,7 +87,7 @@ function AccordionItem({ q, a, open, onToggle }: { q: string; a: string; open: b
         className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
         aria-expanded={open}
       >
-        <span className={`text-base font-semibold transition-colors ${open ? 'text-[#DC3C52]' : 'text-[#0D1B2A]'}`}>
+        <span className={`text-base font-semibold transition-colors ${open ? 'text-[#DC3C52]' : 'text-[#2F3138]'}`}>
           {q}
         </span>
         <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-colors ${open ? 'bg-[#DC3C52] text-white' : 'bg-gray-100 text-gray-400'}`}>
@@ -131,7 +131,7 @@ export default function FaqTabs() {
               onClick={() => switchTab(t.id)}
               className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all ${
                 tab === t.id
-                  ? 'bg-white text-[#0D1B2A] shadow-sm'
+                  ? 'bg-white text-[#2F3138] shadow-sm'
                   : 'text-gray-400 hover:text-gray-600'
               }`}
             >

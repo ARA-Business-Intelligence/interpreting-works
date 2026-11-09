@@ -27,7 +27,7 @@ export const GET: APIRoute = async () => {
     '## Services',
     '',
     `- [For Organizations](${SITE}/services/organizations/): Scheduling platform for hospitals, courts, schools, and businesses needing on-demand interpreter access`,
-    `- [For Language Service Providers](${SITE}/services/language-service-providers/): Access Point: interpreter management, credentialing, and dispatch tools for agencies`,
+    `- [For Language Service Providers](${SITE}/services/language-service-providers/): interpreter management, credentialing, and dispatch tools for agencies`,
     '',
     '## Blog Posts',
     '',
