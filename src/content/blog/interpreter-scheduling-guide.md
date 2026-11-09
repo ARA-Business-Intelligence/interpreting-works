@@ -82,7 +82,7 @@ The result: less admin overhead, fewer gaps, and a program that holds up under s
 
 ---
 
-Ready to see it in action? [Request a demo](/request-demo/) and we'll walk through your specific volume and language mix.
+Ready to see it in action? [Request a demo](https://calendar.app.google/FQafThgovuZCA4SC7) and we'll walk through your specific volume and language mix.
 
 ---
 

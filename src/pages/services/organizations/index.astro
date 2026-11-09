@@ -1,0 +1,335 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Icon from '../../../components/Icon.astro';
+
+const SITE = 'https://interpreting.works';
+const pageSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE}/services/organizations/#webpage`,
+    name: "Interpreter Services for Organizations | interpretingWorks",
+    description: "Hospitals, clinics, courts and businesses schedule on-site, OPI and VRI interpreters, track compliance and manage billing in one platform. No setup fees.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      { "@type": "Question", name: "Which interpreting services can organizations request?", acceptedAnswer: { "@type": "Answer", text: "Over-the-phone (OPI), video remote (VRI) and on-site interpreting, plus document translation, all from one interpretingWorks account." } },
+      { "@type": "Question", name: "Is there a setup fee for organizations?", acceptedAnswer: { "@type": "Answer", text: "No. There are no setup or licensing fees. Organizations pay only for completed interpreting assignments." } },
+      { "@type": "Question", name: "How many users can my organization add?", acceptedAnswer: { "@type": "Answer", text: "As many as you need, at no extra cost, with roles, permissions and access levels you control." } },
+      { "@type": "Question", name: "How does electronic check-in/out work?", acceptedAnswer: { "@type": "Answer", text: "Interpreters check in and out from the platform with geolocation verification, creating accurate start and end times for billing and compliance." } }
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Interpreter Services for Organizations | interpretingWorks"
+  description="Hospitals, clinics, courts and businesses schedule on-site, OPI and VRI interpreters, track compliance and manage billing in one platform. No setup fees."
+  updatedDate="2026-11-09"
+  pageAuthor="interpretingWorks Team"
+  geoRegion="US"
+  geoPlacename="United States"
+  schema={pageSchema}
+  breadcrumbs={[{ name: 'Home', href: `${SITE}/` }, { name: 'For Organizations' }]}
+>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden bg-white pt-16 pb-20 lg:pt-24 lg:pb-28">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_15%_0%,#FFF0F1_0%,rgba(255,255,255,0)_70%)]" aria-hidden="true"></div>
+      <div class="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-5">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#DC3C52]/20 bg-[#FFF0F1] px-4 py-2 text-sm font-semibold text-[#DC3C52]">
+            <span class="h-1.5 w-1.5 rounded-full bg-[#DC3C52]"></span>
+            For Hospitals &amp; Healthcare Organizations
+          </div>
+          <h1 class="text-[40px] sm:text-[56px] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#2F3138] mb-6">
+            Quality interpreting, easy to implement, at a fair price.
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-500 leading-relaxed mb-9">
+            Schedule on-site, phone and video interpreters in a few clicks, follow every assignment in real time, and pull compliance reports whenever you need them.
+          </p>
+          <div class="flex flex-col gap-3 sm:flex-row mb-9">
+            <a href="https://calendar.app.google/FQafThgovuZCA4SC7" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-[#DC3C52] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-[#DC3C52]/25 transition-all hover:bg-[#b83044] hover:-translate-y-0.5">
+              Request a Demo
+              <Icon name="arrow" class="w-4 h-4" />
+            </a>
+            <a href="/contact/" class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#2F3138] bg-white px-7 py-3.5 text-base font-semibold text-[#2F3138] transition-colors hover:bg-[#2F3138] hover:text-white">
+              Talk to Our Team
+            </a>
+          </div>
+          <ul class="grid grid-cols-2 gap-x-6 gap-y-3">
+              <li class="flex items-center gap-2 text-sm font-medium text-gray-600"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3 h-3" /></span>No setup fees</li>
+              <li class="flex items-center gap-2 text-sm font-medium text-gray-600"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3 h-3" /></span>HIPAA compliant</li>
+              <li class="flex items-center gap-2 text-sm font-medium text-gray-600"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3 h-3" /></span>203+ languages &amp; ASL</li>
+              <li class="flex items-center gap-2 text-sm font-medium text-gray-600"><span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3 h-3" /></span>24/7 U.S. support</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-7">
+          <img src="/img/imagen101.png" alt="interpretingWorks on laptop, tablet and phone showing interpreter bookings and the mobile agenda" width="1291" height="724" class="w-full h-auto rounded-3xl shadow-2xl shadow-[#DC3C52]/20" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="bg-white">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-gray-100 rounded-3xl border border-gray-100 bg-white shadow-sm">
+          <div class="px-6 py-8 text-center">
+            <p class="text-4xl font-extrabold tracking-tight text-[#DC3C52]">203+</p>
+            <p class="mt-2 text-sm font-medium text-gray-500">Languages &amp; dialects</p>
+          </div>
+          <div class="px-6 py-8 text-center">
+            <p class="text-4xl font-extrabold tracking-tight text-[#DC3C52]">100k+</p>
+            <p class="mt-2 text-sm font-medium text-gray-500">Appointments per year</p>
+          </div>
+          <div class="px-6 py-8 text-center">
+            <p class="text-4xl font-extrabold tracking-tight text-[#DC3C52]">50%</p>
+            <p class="mt-2 text-sm font-medium text-gray-500">Admin cost reduction</p>
+          </div>
+          <div class="px-6 py-8 text-center">
+            <p class="text-4xl font-extrabold tracking-tight text-[#DC3C52]">$0</p>
+            <p class="mt-2 text-sm font-medium text-gray-500">Setup or licensing fees</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl text-center mx-auto mb-14">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#DC3C52]">Every modality</p>
+          <h2 class="text-3xl md:text-[42px] font-bold leading-tight tracking-tight text-[#2F3138] mb-4">One platform for every interpreting need</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">Book the right kind of interpreter for each encounter, without switching tools or vendors.</p>
+        </div>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="phone" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">Over-the-phone (OPI)</h3>
+            <p class="leading-relaxed text-gray-600">Connect to a qualified interpreter by phone in seconds, for quick and routine conversations.</p>
+          </li>
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="video" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">Video remote (VRI)</h3>
+            <p class="leading-relaxed text-gray-600">Add live video when visual cues matter, including American Sign Language.</p>
+          </li>
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="pin" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">On-site interpreting</h3>
+            <p class="leading-relaxed text-gray-600">Schedule credentialed interpreters in person, matched by language, credentials and proximity.</p>
+          </li>
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="doc" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">Document translation</h3>
+            <p class="leading-relaxed text-gray-600">Send documents for professional translation from the same account.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="py-24 bg-[#2F3138]">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center mb-14">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#F27A8B]">How it works</p>
+          <h2 class="text-3xl md:text-[42px] font-bold leading-tight tracking-tight text-white mb-4">From request to report in three steps</h2>
+          <p class="text-lg text-gray-300 leading-relaxed">Built so your staff can book an interpreter in under a minute.</p>
+        </div>
+        <ol class="grid md:grid-cols-3 gap-6">
+          <li class="relative rounded-3xl bg-white/5 p-8 ring-1 ring-white/10">
+            <span class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#DC3C52] text-lg font-bold text-white">1</span>
+            <h3 class="mb-3 text-xl font-bold text-white">Request</h3>
+            <p class="leading-relaxed text-gray-300">Submit a request from the web portal or the mobile app with the date, time, language and location. Add case numbers or internal references if you need them.</p>
+          </li>
+          <li class="relative rounded-3xl bg-white/5 p-8 ring-1 ring-white/10">
+            <span class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#DC3C52] text-lg font-bold text-white">2</span>
+            <h3 class="mb-3 text-xl font-bold text-white">Match</h3>
+            <p class="leading-relaxed text-gray-300">The system assigns an available, credentialed interpreter based on language, modality and proximity. You can also request a specific interpreter.</p>
+          </li>
+          <li class="relative rounded-3xl bg-white/5 p-8 ring-1 ring-white/10">
+            <span class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#DC3C52] text-lg font-bold text-white">3</span>
+            <h3 class="mb-3 text-xl font-bold text-white">Track and report</h3>
+            <p class="leading-relaxed text-gray-300">Follow every assignment live, get verified check-in and check-out times, and export compliance reports at any time.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-24 bg-white">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl text-center mx-auto mb-14">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#DC3C52]">Built for your team</p>
+          <h2 class="text-3xl md:text-[42px] font-bold leading-tight tracking-tight text-[#2F3138] mb-4">Everything your team needs, nothing it does not</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">The tools hospitals, clinics, courts, schools and businesses use every day to keep language access running.</p>
+        </div>
+        <div class="space-y-24 lg:space-y-32">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="">
+            <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#DC3C52]">Unlimited reporting</p>
+            <h3 class="text-2xl md:text-[34px] font-bold leading-tight tracking-tight text-[#2F3138] mb-5">Reports on everything, at no extra cost.</h3>
+            <p class="text-lg text-gray-600 leading-relaxed mb-7">Create, customize and export reports on efficiency, compliance and performance, built on real-time data.</p>
+            <ul class="space-y-3">
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Compliance reports by language, location, department or date</li>
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Export whenever you need it, with no limits</li>
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Real-time data, no manual data entry</li>
+            </ul>
+          </div>
+          <div>
+          <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#DC3C52] to-[#9f2a3b] p-6 sm:p-10 shadow-2xl shadow-[#DC3C52]/20">
+            <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10" aria-hidden="true"></div>
+            <div class="absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-black/10" aria-hidden="true"></div>
+            <img src="/img/about-dashboard.png" alt="interpretingWorks dashboard with active interpreters, requesters, fulfillment rate and monthly events" width="1186" height="864" class="relative w-full h-auto drop-shadow-2xl" loading="lazy" />
+          </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="lg:order-2">
+            <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#DC3C52]">Direct access</p>
+            <h3 class="text-2xl md:text-[34px] font-bold leading-tight tracking-tight text-[#2F3138] mb-5">See every assignment as it happens.</h3>
+            <p class="text-lg text-gray-600 leading-relaxed mb-7">Get the data you need at a glance, follow interpreters' live location and book a new assignment in a few clicks.</p>
+            <ul class="space-y-3">
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Live status for pending, active and completed assignments</li>
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Interpreter location in real time</li>
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Book, edit and confirm from one screen</li>
+            </ul>
+          </div>
+          <div>
+          <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#DC3C52] to-[#9f2a3b] p-6 sm:p-10 shadow-2xl shadow-[#DC3C52]/20">
+            <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10" aria-hidden="true"></div>
+            <div class="absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-black/10" aria-hidden="true"></div>
+            <img src="/img/bookings.png" alt="interpretingWorks bookings list with color-coded assignment statuses" width="1920" height="1440" class="relative w-full h-auto drop-shadow-2xl" loading="lazy" />
+          </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="">
+            <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#DC3C52]">Electronic check-in/out</p>
+            <h3 class="text-2xl md:text-[34px] font-bold leading-tight tracking-tight text-[#2F3138] mb-5">Verified hours, accurate billing.</h3>
+            <p class="text-lg text-gray-600 leading-relaxed mb-7">Interpreters check in and out securely from the platform, so every billed minute is backed by a verified record.</p>
+            <ul class="space-y-3">
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Geolocation-verified start and end times</li>
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>A complete audit trail for every session</li>
+              <li class="flex gap-3 text-gray-700"><span class="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-[#FFF0F1] text-[#DC3C52]"><Icon name="check" class="w-3.5 h-3.5" /></span>Billing that matches the work delivered</li>
+            </ul>
+          </div>
+          <div>
+          <div class="relative flex items-center justify-center overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#DC3C52] to-[#9f2a3b] p-10 sm:p-14 shadow-2xl shadow-[#DC3C52]/20">
+            <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10" aria-hidden="true"></div>
+            <img src="/img/about-mobile-events.png" alt="interpretingWorks mobile app showing new job offers and modified events" width="304" height="625" class="relative max-h-[460px] w-auto drop-shadow-2xl" loading="lazy" />
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl text-center mx-auto mb-14">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#DC3C52]">Included</p>
+          <h2 class="text-3xl md:text-[42px] font-bold leading-tight tracking-tight text-[#2F3138] mb-4">Included for every organization</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">No packages, no add-ons. Every account gets the full platform.</p>
+        </div>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="users" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">Unlimited users</h3>
+            <p class="leading-relaxed text-gray-600">Add as many users as you need, with the roles, permissions and access levels you choose.</p>
+          </li>
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="chat" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">24/7 support</h3>
+            <p class="leading-relaxed text-gray-600">A U.S.-based support line, available around the clock.</p>
+          </li>
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="shield" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">HIPAA compliant</h3>
+            <p class="leading-relaxed text-gray-600">Data encrypted in transit and at rest, role-based access and full activity logging.</p>
+          </li>
+          <li class="group rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#DC3C52]/5">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF0F1] text-[#DC3C52] transition-colors group-hover:bg-[#DC3C52] group-hover:text-white"><Icon name="dollar" /></div>
+            <h3 class="mb-2 text-lg font-bold text-[#2F3138]">Pay per assignment</h3>
+            <p class="leading-relaxed text-gray-600">No setup or licensing fees. You pay only for completed interpreting assignments.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bg-gray-50 pb-1"></div>
+    <!-- CROSS LINK -->
+    <section class="pt-0 pb-24 bg-gray-50">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <a href="/services/language-service-providers/" class="group flex flex-col gap-4 rounded-3xl border border-gray-100 bg-gray-50 px-8 py-7 transition-colors hover:border-[#DC3C52]/30 hover:bg-[#FFF0F1] sm:flex-row sm:items-center sm:justify-between">
+          <p class="text-lg font-semibold text-[#2F3138]">Are you a language service provider?</p>
+          <span class="inline-flex items-center gap-2 font-semibold text-[#DC3C52]">See interpretingWorks for LSPs<Icon name="arrow" class="w-4 h-4 transition-transform group-hover:translate-x-1" /></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA BOTTOM -->
+    <section class="relative overflow-hidden py-24 bg-[#2F3138] text-white text-center">
+      <div class="absolute -top-40 left-1/2 h-80 w-[700px] -translate-x-1/2 rounded-full bg-[#DC3C52]/25 blur-3xl" aria-hidden="true"></div>
+      <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-[42px] font-bold mb-6 leading-tight tracking-tight">Ready to simplify interpreter scheduling?</h2>
+        <p class="text-gray-300 text-lg mb-10 leading-relaxed">See how your team can request, track and report on every interpreting assignment from one place.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://calendar.app.google/FQafThgovuZCA4SC7" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-[#DC3C52] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#DC3C52]/30 hover:bg-[#b83044] transition-colors">
+            Request a Demo
+            <Icon name="arrow" class="w-4 h-4" />
+          </a>
+          <a href="/contact/" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-colors">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#2F3138] text-white border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
+        <div class="lg:col-span-2">
+          <img src="/img/logo.png" alt="interpretingWorks" class="h-10 w-auto mb-6 brightness-0 invert" width="200" height="64" loading="lazy" />
+          <p class="text-gray-400 text-base max-w-sm leading-relaxed">
+            interpretingWorks by Language Link Corporation. Professional interpreting scheduling for organizations and the LSPs that serve them across the United States.
+          </p>
+        </div>
+        <nav aria-label="Company links">
+          <h2 class="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-5">Company</h2>
+          <ul class="space-y-3 list-none p-0">
+            <li><a href="/about/"     class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+            <li><a href="/faq/"       class="text-gray-400 hover:text-white transition-colors text-sm">FAQ</a></li>
+            <li><a href="/blog/" class="text-gray-400 hover:text-white transition-colors text-sm">Resources</a></li>
+            <li><a href="/contact/"   class="text-gray-400 hover:text-white transition-colors text-sm">Contact Us</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Solutions links">
+          <h2 class="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-5">Solutions</h2>
+          <ul class="space-y-3 list-none p-0">
+            <li><a href="/services/organizations/"              class="text-gray-400 hover:text-white transition-colors text-sm">For Organizations</a></li>
+            <li><a href="/services/language-service-providers/" class="text-gray-400 hover:text-white transition-colors text-sm">For LSPs</a></li>
+            <li><a href="/#mobile-app"                 class="text-gray-400 hover:text-white transition-colors text-sm">Mobile App</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal links">
+          <h2 class="font-semibold text-sm uppercase tracking-wider text-gray-300 mb-5">Legal</h2>
+          <ul class="space-y-3 list-none p-0">
+            <li><a href="/privacy/" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+            <li><a href="/terms/"   class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <p>&copy; 2025 interpretingWorks · Language Link Corporation. All rights reserved.</p>
+        <p>Serving hospitals, clinics, courts, schools, and businesses across the United States.</p>
+      </div>
+    </div>
+  </footer>
+
+</BaseLayout>
