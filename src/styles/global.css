@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* Blog posts use prose-* classes; without this plugin they render unstyled */
+@plugin "@tailwindcss/typography";
 
 /* Neutral grays: Tailwind default gray/slate tint blue, off the iW palette */
 @theme {
@@ -29,6 +31,8 @@
 @layer base {
   *, *::before, *::after { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+  /* Explicit light canvas: pages without a section background (blog posts) went dark under forced dark mode */
+  html { color-scheme: light; }
+  body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background-color: #fff; }
   img, video { max-width: 100%; display: block; }
 }

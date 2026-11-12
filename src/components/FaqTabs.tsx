@@ -2,12 +2,12 @@ import { useState } from 'react';
 
 const REQUESTERS = [
   {
-    q: 'What is InterpretingWorks?',
-    a: 'InterpretingWorks is a secure scheduling platform that helps you request, manage, and track interpreter services quickly and efficiently. It automates scheduling, confirmations, reporting, and billing, all in one place.',
+    q: 'What is interpretingWorks?',
+    a: 'interpretingWorks is a secure scheduling platform that helps you request, manage, and track interpreter services quickly and efficiently. It automates scheduling, confirmations, reporting, and billing, all in one place.',
   },
   {
     q: 'How do I request an interpreter?',
-    a: 'Simply log into your InterpretingWorks account, select "New Request," and fill in the required details such as date, time, language, and location. You can also attach case numbers or internal references if needed.',
+    a: 'Simply log into your interpretingWorks account, select "New Request," and fill in the required details such as date, time, language, and location. You can also attach case numbers or internal references if needed.',
   },
   {
     q: 'Can I choose a specific interpreter?',
@@ -15,7 +15,7 @@ const REQUESTERS = [
   },
   {
     q: 'How much does it cost to use the system?',
-    a: 'There are no setup or licensing fees to access InterpretingWorks. The platform is included as part of the interpreting services provided by Language Link. Agencies only pay for completed interpreting assignments according to the agreed contract rates; the use of the system, reporting, and support tools is included at no additional cost.',
+    a: 'There are no setup or licensing fees to access interpretingWorks. The platform is included as part of the interpreting services provided by Language Link. Agencies only pay for completed interpreting assignments according to the agreed contract rates; the use of the system, reporting, and support tools is included at no additional cost.',
   },
   {
     q: 'How does electronic check-in/out work?',
@@ -35,7 +35,7 @@ const REQUESTERS = [
   },
   {
     q: 'Does the system follow security protocols?',
-    a: 'Yes. InterpretingWorks is built with enterprise-grade security and compliance standards. All data is encrypted in transit and at rest, and the platform complies with HIPAA, CLAS, and applicable state and federal privacy regulations. Access is role-based to ensure that only authorized users can view sensitive information, and all activities are logged for auditing and accountability.',
+    a: 'Yes. interpretingWorks is built with enterprise-grade security and compliance standards. All data is encrypted in transit and at rest, and the platform complies with HIPAA, CLAS, and applicable state and federal privacy regulations. Access is role-based to ensure that only authorized users can view sensitive information, and all activities are logged for auditing and accountability.',
   },
 ];
 
@@ -54,7 +54,7 @@ const INTERPRETERS = [
   },
   {
     q: 'When will I get paid?',
-    a: 'Payments are processed according to contract terms, typically within 15 days after client payment is received by InterpretingWorks. You can view your payment history in your dashboard.',
+    a: 'Payments are processed according to contract terms, typically within 15 days after client payment is received by interpretingWorks. You can view your payment history in your dashboard.',
   },
   {
     q: 'Can I update my availability?',
@@ -70,11 +70,11 @@ const INTERPRETERS = [
   },
   {
     q: 'How much does it cost to use the system?',
-    a: 'InterpretingWorks is completely free for interpreters. There are no fees to register, accept jobs, or access your schedule and payment information. The platform is provided by Language Link as part of your partnership to simplify scheduling, reporting, and compliance management.',
+    a: 'interpretingWorks is completely free for interpreters. There are no fees to register, accept jobs, or access your schedule and payment information. The platform is provided by Language Link as part of your partnership to simplify scheduling, reporting, and compliance management.',
   },
   {
     q: 'Does the system follow security protocols?',
-    a: 'Absolutely. InterpretingWorks uses secure encryption and multi-layer authentication to protect your personal data, assignments, and payment details. The system meets HIPAA and industry confidentiality standards, so your information and your clients\' information are always handled safely and responsibly.',
+    a: 'Absolutely. interpretingWorks uses secure encryption and multi-layer authentication to protect your personal data, assignments, and payment details. The system meets HIPAA and industry confidentiality standards, so your information and your clients\' information are always handled safely and responsibly.',
   },
 ];
 
