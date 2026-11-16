@@ -50,7 +50,13 @@ npm run preview    # preview production build
 
 Static output — deploy to any CDN (Netlify, Vercel, Cloudflare Pages).
 
-**Contact form** — the form uses `data-netlify="true"`. If deploying to Netlify it works out of the box. For other platforms replace the `action` attribute with a Formspree or similar endpoint.
+**Contact form**: posts to `src/pages/api/contact.ts` (Vercel function), which emails each message through Resend's REST API. Logic and tests live in `src/lib/contact.ts` / `src/lib/contact.test.ts` (`bun test src/lib`). Set these Vercel env vars:
+
+- `RESEND_API_KEY`: key from resend.com
+- `CONTACT_TO_EMAIL`: where messages go (comma separated for several)
+- `CONTACT_FROM_EMAIL` (optional): verified sender, e.g. `interpretingWorks <hello@interpreting.works>`. Defaults to Resend's test sender, which only delivers to the Resend account owner until a domain is verified.
+
+Until the first two are set, the form shows a friendly error and logs `[contact] failed:not-configured`.
 
 ---
 
@@ -65,7 +71,7 @@ No AI-generated images are used.
 
 - [ ] `src/layouts/BaseLayout.astro` — fill `[COMPLETAR]` telephone, email, address in the Organization JSON-LD schema
 - [ ] `src/layouts/BaseLayout.astro` — add sameAs links (LinkedIn, Facebook)
-- [ ] `public/img/og-default.png` — create Open Graph image (1200×630)
-- [ ] Contact form — wire up action URL or Netlify form notifications
+- [x] `public/img/og-default.png`: Open Graph image (1200×630)
+- [ ] Contact form: set `RESEND_API_KEY` and `CONTACT_TO_EMAIL` in Vercel
 - [ ] App Store / Google Play links in mobile section
 - [ ] `/request-demo/` page
