@@ -19,7 +19,7 @@ export const GET: APIRoute = async () => {
     '## Main Pages',
     '',
     `- [Home](${SITE}/): Interpreter scheduling platform overview: features, screenshot walkthrough, mobile app, demo request`,
-    `- [About Us](${SITE}/about/): Company history, founding team, and mission: 407+ languages, 100k+ appointments per year, 50% cost reduction vs traditional agencies`,
+    `- [About Us](${SITE}/about/): Company history, founding team, and mission: 407+ languages, sign language in 23 nationalities including ASL, 100k+ appointments per year, 50% cost reduction vs traditional agencies`,
     `- [FAQ](${SITE}/faq/): Common questions for healthcare requesters and professional interpreters: onboarding, billing, compliance, scheduling`,
     `- [Contact Us](${SITE}/contact/): Request a demo or reach the team: 420 East Main St. Suite 7, Branford CT 06405`,
     `- [Blog](${SITE}/blog/): Language access insights: HIPAA compliance, OPI vs VRI, interpreter scheduling best practices`,
