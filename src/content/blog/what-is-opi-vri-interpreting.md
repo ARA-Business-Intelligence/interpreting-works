@@ -50,6 +50,6 @@ If you need speed and simplicity, OPI is your go-to. If the interaction requires
 
 **Sources & Further Reading**
 
-- [NCIHC: National Standards for Healthcare Interpreting](https://www.ncihc.org/standards-and-guidelines)
+- [NCIHC: National Standards for Healthcare Interpreting](https://www.ncihc.org/standards)
 - [CCHI: Certification Commission for Healthcare Interpreters](https://www.cchicertification.org/)
 - [ATA: American Translators Association](https://www.atanet.org/)
