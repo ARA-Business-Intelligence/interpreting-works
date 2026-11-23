@@ -1,5 +1,4 @@
-// Contact form: validation and email delivery (Resend REST API, no SDK).
-// Env: RESEND_API_KEY, CONTACT_TO_EMAIL (comma separated), optional CONTACT_FROM_EMAIL.
+// Contact form: validation and email delivery through FormSubmit.
 
 export type ContactInput = {
   firstName: string;
@@ -60,22 +59,45 @@ export function buildEmail(d: ContactInput) {
   };
 }
 
+// Recipients: messages go to support, Nico gets a copy. Override with CONTACT_TO_EMAIL / CONTACT_CC_EMAIL.
+export const DEFAULT_TO = 'support@interpreting.works';
+export const DEFAULT_CC = 'nicolas@arabusinessintelligence.com';
+export const SITE_URL = 'https://interpreting-works-beta.vercel.app/contact/';
+
+// FormSubmit (formsubmit.co): no account or API key. The first message sends an
+// activation email to the TO address; once someone clicks "Activate", it delivers.
 export async function sendContactEmail(
   d: ContactInput,
-  env: { apiKey?: string; to?: string; from?: string },
+  env: { to?: string; cc?: string; site?: string } = {},
   fetchFn: typeof fetch = fetch,
 ): Promise<{ ok: boolean; reason?: string }> {
-  if (!env.apiKey || !env.to) return { ok: false, reason: 'not-configured' };
+  const to = (env.to || DEFAULT_TO).trim();
+  const cc = (env.cc ?? DEFAULT_CC).trim();
+  const site = env.site || SITE_URL;
   const mail = buildEmail(d);
-  const res = await fetchFn('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${env.apiKey}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      from: env.from || 'interpretingWorks Website <onboarding@resend.dev>',
-      to: env.to.split(',').map((s) => s.trim()).filter(Boolean),
-      reply_to: d.email,
-      ...mail,
-    }),
-  });
-  return res.ok ? { ok: true } : { ok: false, reason: `resend-${res.status}` };
+  let res: Response;
+  try {
+    res = await fetchFn(`https://formsubmit.co/ajax/${encodeURIComponent(to)}`, {
+      method: 'POST',
+      // FormSubmit ties a form to the page it is sent from, so send a stable referer
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', Referer: site, Origin: new URL(site).origin },
+      body: JSON.stringify({
+        _subject: mail.subject,
+        _replyto: d.email,
+        _template: 'table',
+        _captcha: 'false',
+        ...(cc ? { _cc: cc } : {}),
+        Name: `${d.firstName} ${d.lastName}`,
+        Email: d.email,
+        Organization: d.organization || '(not provided)',
+        Message: d.message,
+      }),
+    });
+  } catch {
+    return { ok: false, reason: 'network' };
+  }
+  const body: any = await res.json().catch(() => ({}));
+  if (res.ok && String(body.success) === 'true') return { ok: true };
+  const msg = String(body.message || '');
+  return { ok: false, reason: /activat/i.test(msg) ? 'needs-activation' : `formsubmit-${res.status}` };
 }

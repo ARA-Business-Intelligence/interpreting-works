@@ -50,13 +50,9 @@ npm run preview    # preview production build
 
 Static output — deploy to any CDN (Netlify, Vercel, Cloudflare Pages).
 
-**Contact form**: posts to `src/pages/api/contact.ts` (Vercel function), which emails each message through Resend's REST API. Logic and tests live in `src/lib/contact.ts` / `src/lib/contact.test.ts` (`bun test src/lib`). Set these Vercel env vars:
+**Contact form**: posts to `src/pages/api/contact.ts` (Vercel function), which emails each message through FormSubmit (formsubmit.co, no account or key). Messages go to `support@interpreting.works` with a copy to `nicolas@arabusinessintelligence.com`; override with the `CONTACT_TO_EMAIL` / `CONTACT_CC_EMAIL` env vars. Logic and tests: `src/lib/contact.ts`, `src/lib/contact.test.ts` (`bun test src/lib`).
 
-- `RESEND_API_KEY`: key from resend.com
-- `CONTACT_TO_EMAIL`: where messages go (comma separated for several)
-- `CONTACT_FROM_EMAIL` (optional): verified sender, e.g. `interpretingWorks <hello@interpreting.works>`. Defaults to Resend's test sender, which only delivers to the Resend account owner until a domain is verified.
-
-Until the first two are set, the form shows a friendly error and logs `[contact] failed:not-configured`.
+The first message sends an activation email to the TO address; until someone clicks "Activate" there, the form shows an error and Vercel logs `[contact] failed:needs-activation`. Changing the TO address needs a new activation.
 
 ---
 
@@ -72,6 +68,6 @@ No AI-generated images are used.
 - [ ] `src/layouts/BaseLayout.astro` — fill `[COMPLETAR]` telephone, email, address in the Organization JSON-LD schema
 - [ ] `src/layouts/BaseLayout.astro` — add sameAs links (LinkedIn, Facebook)
 - [x] `public/img/og-default.png`: Open Graph image (1200×630)
-- [ ] Contact form: set `RESEND_API_KEY` and `CONTACT_TO_EMAIL` in Vercel
+- [ ] Contact form: click "Activate" in the FormSubmit email sent to support@interpreting.works
 - [ ] App Store / Google Play links in mobile section
 - [ ] `/request-demo/` page
