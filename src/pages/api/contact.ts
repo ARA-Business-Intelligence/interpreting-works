@@ -28,9 +28,8 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   }
 
   const result = await sendContactEmail(parsed.data, {
-    apiKey: import.meta.env.RESEND_API_KEY ?? process.env.RESEND_API_KEY,
-    to: import.meta.env.CONTACT_TO_EMAIL ?? process.env.CONTACT_TO_EMAIL,
-    from: import.meta.env.CONTACT_FROM_EMAIL ?? process.env.CONTACT_FROM_EMAIL,
+    to: process.env.CONTACT_TO_EMAIL,
+    cc: process.env.CONTACT_CC_EMAIL,
   });
 
   // Trace line for Vercel logs: one per submission, no personal data
