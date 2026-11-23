@@ -7,7 +7,7 @@ export const GET: APIRoute = async () => {
   const posts = (await getCollection('blog', ({ data }) => !data.draft))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-  const SITE = 'https://interpreting.works';
+  const SITE = 'https://hello.interpreting.works';
 
   const lines: string[] = [
     '# interpretingWorks',
