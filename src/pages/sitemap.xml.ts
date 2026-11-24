@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 export const GET: APIRoute = async ({ request }) => {
   const host  = request.headers.get('host') ?? '';
   const proto = request.headers.get('x-forwarded-proto') ?? 'https';
-  const root  = host ? `${proto}://${host}` : 'https://interpreting.works';
+  const root  = host ? `${proto}://${host}` : 'https://hello.interpreting.works';
 
   const posts = await getCollection('blog', ({ data }) => !data.draft);
 

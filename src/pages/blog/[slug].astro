@@ -27,9 +27,9 @@ const articleSchema = {
   publisher: {
     '@type': 'Organization',
     name: 'interpretingWorks',
-    logo: { '@type': 'ImageObject', url: 'https://interpreting.works/img/logo.png' },
+    logo: { '@type': 'ImageObject', url: 'https://hello.interpreting.works/img/logo.png' },
   },
-  ...(post.data.image ? { image: `https://interpreting.works${post.data.image}` } : {}),
+  ...(post.data.image ? { image: `https://hello.interpreting.works${post.data.image}` } : {}),
 };
 ---
 
@@ -43,8 +43,8 @@ const articleSchema = {
   geoRegion="US"
   geoPlacename="United States"
   breadcrumbs={[
-    { name: 'Home',   href: 'https://interpreting.works/' },
-    { name: 'Blog',   href: 'https://interpreting.works/blog/' },
+    { name: 'Home',   href: 'https://hello.interpreting.works/' },
+    { name: 'Blog',   href: 'https://hello.interpreting.works/blog/' },
     { name: post.data.title },
   ]}
 >
