@@ -33,26 +33,6 @@ const pageSchema = [
   },
 ];
 
-const CONTACT_CARDS = [
-  {
-    icon: `<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z"/></svg>`,
-    label: 'Call Us',
-    value: '800-905-0896',
-    href: 'tel:+18009050896',
-  },
-  {
-    icon: `<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>`,
-    label: 'Email Us',
-    value: 'sales@interpreting.works',
-    href: 'mailto:sales@interpreting.works',
-  },
-  {
-    icon: `<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z"/></svg>`,
-    label: 'Our Office',
-    value: '420 East Main St. Suite 7\nBranford, CT 06405',
-    href: 'https://maps.google.com/?q=420+East+Main+St+Suite+7+Branford+CT+06405',
-  },
-];
 ---
 
 <BaseLayout
@@ -66,60 +46,24 @@ const CONTACT_CARDS = [
 
   <main>
 
-    <!-- HERO STRIP -->
-    <section class="bg-[#2F3138] text-white pt-16 pb-0 overflow-hidden">
-      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-10 items-end">
-
-          <!-- Left: headline + contact cards -->
-          <div class="pb-16">
-            <div class="mb-5 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white/80">
-              We'd love to hear from you
-            </div>
-            <h1 class="text-[42px] sm:text-[56px] font-extrabold leading-[1.02] tracking-[-0.04em] mb-6">
-              Contact Us
-            </h1>
-            <p class="text-white/70 text-lg leading-relaxed mb-10 max-w-md">
-              Whether you're an organization looking for interpreter services or a language service provider exploring interpretingWorks for your agency, our team is ready to help.
-            </p>
-
-            <!-- Contact cards -->
-            <div class="flex flex-col gap-3">
-              {CONTACT_CARDS.map(card => (
-                <a
-                  href={card.href}
-                  target={card.href.startsWith('http') ? '_blank' : undefined}
-                  rel={card.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  class="group flex items-start gap-4 rounded-2xl bg-white/[0.07] hover:bg-white/[0.13] border border-white/10 px-5 py-4 transition-all duration-200"
-                >
-                  <span class="mt-0.5 flex-shrink-0 w-9 h-9 rounded-xl bg-[#DC3C52]/20 text-[#DC3C52] flex items-center justify-center group-hover:bg-[#DC3C52] group-hover:text-white transition-colors" set:html={card.icon} />
-                  <div>
-                    <p class="text-xs font-bold uppercase tracking-widest text-white/40 mb-0.5">{card.label}</p>
-                    <p class="text-white font-semibold text-sm whitespace-pre-line leading-snug">{card.value}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <!-- Right: team photo cropped into the hero -->
-          <div class="hidden lg:block self-end">
-            <img
-              src="/img/team-founding-leadership.png"
-              alt="interpretingWorks founding leadership team"
-              class="w-full max-w-lg ml-auto rounded-t-3xl object-cover object-top"
-              style="max-height: 420px; object-position: center top;"
-              width="600" height="420"
-              loading="eager"
-            />
-          </div>
-
+    <!-- HERO: title only, contact details live once next to the form -->
+    <section class="relative bg-white overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,#FFF0F1_0%,rgba(255,255,255,0)_70%)]" aria-hidden="true"></div>
+      <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-20 pb-12 text-center">
+        <div class="mb-5 inline-flex items-center rounded-full border border-[#DC3C52]/20 bg-[#FFF0F1] px-4 py-2 text-sm font-semibold text-[#DC3C52]">
+          We'd love to hear from you
         </div>
+        <h1 class="text-[40px] sm:text-[52px] font-extrabold leading-[1.05] tracking-[-0.04em] text-[#2F3138] mb-5">
+          Contact Us
+        </h1>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Whether you're an organization looking for interpreter services or a language service provider exploring interpretingWorks for your agency, our team is ready to help.
+        </p>
       </div>
     </section>
 
     <!-- FORM + SIDE INFO -->
-    <section class="py-20 bg-gray-50">
+    <section class="pb-20 pt-4 bg-white">
       <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-start">
 
@@ -248,50 +192,6 @@ const CONTACT_CARDS = [
           <!-- Side info -->
           <div class="space-y-8">
 
-            <!-- Testimonial -->
-            <div class="bg-[#FFF0F1] rounded-3xl p-8 border border-[#DC3C52]/10">
-              <blockquote class="text-xl font-semibold text-[#2F3138] leading-snug mb-6">
-                "Huge win for me, my team, the hospital, and the patients."
-              </blockquote>
-              <div class="flex items-center gap-3">
-                <img
-                  src="/img/testimonial-person.jpg"
-                  alt="Hospital CNO"
-                  class="w-12 h-12 rounded-full object-cover border-2 border-white shadow"
-                  width="48" height="48"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="font-bold text-[#2F3138] text-sm">CNO / Hospital</p>
-                  <p class="text-gray-500 text-xs">interpretingWorks customer</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Platform screenshots side-by-side -->
-            <div class="rounded-3xl overflow-hidden shadow-lg border border-gray-100">
-              <div class="grid grid-cols-2 gap-0">
-                <img
-                  src="/img/bookings.png"
-                  alt="interpretingWorks bookings dashboard"
-                  class="w-full object-cover border-r border-gray-100"
-                  width="400" height="300"
-                  loading="lazy"
-                />
-                <img
-                  src="/img/agencies-tablet.png"
-                  alt="interpretingWorks agency management view"
-                  class="w-full object-cover"
-                  width="400" height="300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="bg-white px-5 py-4 border-t border-gray-100">
-                <p class="text-sm font-semibold text-[#2F3138]">See the platform in action</p>
-                <p class="text-xs text-gray-400 mt-0.5">Request a demo and we'll walk you through it.</p>
-              </div>
-            </div>
-
             <!-- Quick info -->
             <div class="rounded-3xl bg-[#2F3138] text-white p-8">
               <p class="text-xs font-bold uppercase tracking-widest text-white/40 mb-5">Get in touch directly</p>
@@ -314,6 +214,27 @@ const CONTACT_CARDS = [
                   </span>
                   <span class="font-semibold text-sm leading-snug">420 East Main St. Suite 7<br />Branford, CT 06405</span>
                 </a>
+              </div>
+            </div>
+
+
+            <!-- Testimonial -->
+            <div class="bg-[#FFF0F1] rounded-3xl p-8 border border-[#DC3C52]/10">
+              <blockquote class="text-xl font-semibold text-[#2F3138] leading-snug mb-6">
+                "Huge win for me, my team, the hospital, and the patients."
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <img
+                  src="/img/testimonial-person.jpg"
+                  alt="Hospital CNO"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-white shadow"
+                  width="48" height="48"
+                  loading="lazy"
+                />
+                <div>
+                  <p class="font-bold text-[#2F3138] text-sm">CNO / Hospital</p>
+                  <p class="text-gray-500 text-xs">interpretingWorks customer</p>
+                </div>
               </div>
             </div>
 
